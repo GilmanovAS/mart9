@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз с картинками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('1.jpg'); /* Фон для всей страницы */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Фон фиксируется при прокрутке */
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .quiz-block {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .quiz-block h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .quiz-block img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .quiz-block input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .quiz-block input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Блок 1 -->
+        <div class="quiz-block" style="background-image: url('4.jpg');">
+
+            <div>
+                <h2>Задача 1: Убийство в загородном доме
+В загородном доме был найден мёртвым хозяин поместья, мистер Смит. Подозреваемые:
+
+Горничная — утверждает, что в момент убийства мыла посуду на кухне.
+
+Дворецкий — говорит, что был в библиотеке и разбирал книги.
+
+Садовник — заявляет, что подрезал розы в саду.
+
+Повар — утверждает, что готовил ужин.
+
+Подсказка: На месте преступления найдены следы грязи, ведущие к саду, а также разбитая ваза в библиотеке.
+
+Вопрос: Кто убийца?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Блок 2 -->
+        <div class="quiz-block" style="background-image: url('2.jpg');">
+
+            <div>
+                <h2>Задача 2: Тайна пропавшего бриллианта
+На званом ужине пропал редкий бриллиант, а один из гостей был найден мёртвым. Подозреваемые:
+
+Лакей — утверждает, что был в кладовой и разгружал вино.
+
+Фрейлина — говорит, что помогала гостье с платьем.
+
+Шофёр — заявляет, что проверял машину в гараже.
+
+Повар — утверждает, что готовил десерт.
+
+Подсказка: На полу найдены следы масла, ведущие к гаражу, а также кусочек ткани, похожий на униформу.
+
+Вопрос: Кто виновен?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Блок 3 -->
+        <div class="quiz-block" style="background-image: url('3.jpg');">
+
+            <div>
+                <h2>Задача 3: Загадка в старом замке
+В старом замке был убит барон. Подозреваемые:
+
+Камердинер — утверждает, что чистил доспехи в зале.
+
+Кухарка — говорит, что готовила завтрак на кухне.
+
+Секретарь — заявляет, что работал с документами в кабинете.
+
+Садовник — утверждает, что поливал цветы в оранжерее.
+
+Подсказка: На руке убитого найдены следы чернил, а на полу — следы грязи, ведущие к оранжерее.
+
+Вопрос: Кто убийца?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Кнопка отправки -->
+        <button class="submit-button">Отправить ответы</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз с картинками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('1.jpg'); /* Фон для всей страницы */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Фон фиксируется при прокрутке */
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .quiz-block {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .quiz-block h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .quiz-block img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .quiz-block input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .quiz-block input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Блок 1 -->
+        <div class="quiz-block" style="background-image: url('4.jpg');">
+            <img src="molotokA.jpg" alt="Картинка к вопросу 1">
+            <div>
+                <h2>Вопрос 1: 🛠В какую букву молоток ударит первой?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Блок 2 -->
+        <div class="quiz-block" style="background-image: url('2.jpg');">
+            <img src="spichki8.jpg" alt="Картинка к вопросу 2">
+            <div>
+                <h2>Вопрос 2: Сколько здесь спичек?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Блок 3 -->
+        <div class="quiz-block" style="background-image: url('3.jpg');">
+            <img src="Triangle18.jpg" alt="Картинка к вопросу 3">
+            <div>
+                <h2>Вопрос 3: Сколько здесь треугольников?</h2>
+                <input type="text" placeholder="Введите ответ">
+            </div>
+        </div>
+
+        <!-- Кнопка отправки -->
+        <button class="submit-button">Отправить ответы</button>
+    </div>
+</body>
+</html>
